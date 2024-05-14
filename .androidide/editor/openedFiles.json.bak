@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Задачи/app/src/main/java/com/andmar/todo/data/TodoItem.kt",
+      "selection": {
+        "end": {
+          "column": 2,
+          "index": 175,
+          "line": 9
+        },
+        "start": {
+          "column": 2,
+          "index": 175,
+          "line": 9
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Задачи/app/src/main/java/com/andmar/todo/data/TodoItem.kt"
+}

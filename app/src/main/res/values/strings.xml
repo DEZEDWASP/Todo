@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Задачи</string>
+    
+    <!--MainScreen-->
+    <string name="top_app_bar_main_title">Задачи</string>
+    <string name="category_settings">Категории</string>
+    <string name="settings">Настройки</string>
+    <string name="add_category_button">Добавить</string>
+    <string name="is_empty_todo">Упс, тут ничего нет</string>
+    <string name="is_done">Выполненные</string>
+    
+    <!--EntryTodoScreen-->
+    <string name="top_app_bar_entry_todo_title">Новая задача</string>
+    <string name="label_todo_title">Заголовок</string>
+    <string name="label_todo_info">Информация</string>
+    
+    <!--EditScreen-->
+    <string name="top_app_bar_edit_todo_title">Рудактирование задачи</string>
+    
+    <!--DetailsScreen-->
+    <string name="top_app_bar_details_title">Задача</string>
+    <string name="details_menu_add_remonder">Добавить напоминание</string>
+    <string name="details_menu_edit_todo">Редактировать</string>
+    <string name="details_menu_delete_todo">Удалить</string>
+    <string name="details_menu_is_done_todo">Пометить выполненной</string>
+    <string name="text_reminder">Напоминание</string>
+    <string name="details_menu_edit_additional">Редактировать</string>
+    <string name="details_menu_delete_additional">Удалить</string>
+    <string name="details_menu_is_done_additional">Пометить выполненной</string>
+    <string name="details_menu_is_not_done_additional">Пометить не выполненной</string>
+    <string name="details_menu_is_importante_additional">Пометить важной</string>
+    <string name="details_menu_is_not_importante_additional">Пометить не важной</string>
+    <string name="additional_todo_text">Дополнительные задачи</string>
+    
+    
+    
+    <!--EntryAdditionalScreen-->
+    <string name="top_app_bar_entry_additional_title">Новая доп задача</string>
+    <string name="label_additional">Новая доп задача</string>
+    
+    <!--EditAdditionalScreen-->
+    <string name="top_app_bar_edit_additional_title">Новая доп задача</string>
+    
+    <!--CategorySettingsScreen-->
+    <string name="top_app_bar_column_settings_title">Категории</string>
+    <string name="category_settings_menu_edit_category">Редактировать</string>
+    <string name="category_settings_menu_delete_category">Удалить</string>
+    <string name="is_empty_category">Упс, тут ничего нет </string>
+    
+    
+    <!--CategoryEntryScreen-->
+    <string name="top_app_bar_category_entry_settings_title">Новая категория</string>
+    <string name="text_field_category_entry_settings_label">Название</string>
+    
+    <!--CategoryEditScreen-->
+    <string name="top_app_bar_category_edit_settings_title">Редактирование</string>
+    
+    <!--SettingsScreen-->
+    <string name="top_app_bar_string_title">Настройки</string>
+    
+    <!--ReminderScreen-->
+    <string name="top_app_bar_reminder_title">Напоминание</string>
+    <string name="set_reminder_button">Поставить напоминание</string>
+    <string name="hours_text">Часов</string>
+    <string name="minutes_text">Минут</string>
+    <string name="day_text">День</string>
+    <string name="month_text">Месяц</string>
+    <string name="year_text">Год</string>
+    
+</resources>
