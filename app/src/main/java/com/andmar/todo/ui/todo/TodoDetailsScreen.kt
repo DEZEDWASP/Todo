@@ -436,7 +436,7 @@ val checked = remember {
 }
 
 if(checked.value) additionalsList.add(item)
-
+if(!checked.value) additionalsList.removeIf { it == item }
 
 val isShowAdditionalSheet = remember {
     mutableStateOf(false)

@@ -116,44 +116,44 @@ fun TodoTopAppBar(
             }
         },
         actions = {
-            if(showActionsIcon) {
-                AnimatedContent(targetState = isLongClick) { isLongClick ->
-                    if(isLongClick) {
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically
+            AnimatedContent(targetState = isLongClick) { isLongClick ->
+                if(isLongClick) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        IconButton(
+                            onClick = {
+                                onLongClickDelete()
+                            }
                         ) {
-                            IconButton(
-                                onClick = {
-                                    onLongClickDelete()
-                                }
-                            ) {
-                                Icon(
-                                    Icons.Outlined.Delete,
-                                    null
-                                )
-                            }
-                            IconButton(
-                                onClick = {
-                                    onLongClickImportante()
-                                }
-                            ) {
-                                Icon(
-                                    Icons.Outlined.Star,
-                                    null
-                                )
-                            }
-                            IconButton(
-                                onClick = {
-                                    onLongClickClose()        
-                                }
-                            ) {
-                                Icon(
-                                    Icons.Outlined.Close,
-                                    "Close"
-                                )
-                            }
+                            Icon(
+                                Icons.Outlined.Delete,
+                                null
+                            )
                         }
-                    } else {
+                        IconButton(
+                            onClick = {
+                                onLongClickImportante()
+                            }
+                        ) {
+                            Icon(
+                                Icons.Outlined.Star,
+                                null
+                            )
+                        }
+                        IconButton(
+                            onClick = {
+                                onLongClickClose()        
+                            }
+                        ) {
+                            Icon(
+                                Icons.Outlined.Close,
+                                "Close"
+                            )
+                        }
+                    }
+                } else {
+                    if(showActionsIcon) {
                         IconButton(
                             onClick = {
                                 onClickActionsIcon()        

@@ -34,6 +34,28 @@ class CategorySettingsViewModel(
         todoRepository.updateTodoCategory(todoCategory)
     }
     
+    fun deleteCategories(categoryList: MutableList<TodoCategory>) = viewModelScope.launch {
+        categoryList.forEach { item ->
+            try {
+                todoRepository.deleteCategory(item)
+            } catch(e: Exception) {
+            
+            }
+        }
+        categoryList.clear()
+    }
+    
+    fun importanteCategories(categoryList: MutableList<TodoCategory>) = viewModelScope.launch {
+        categoryList.forEach { item ->
+            try {
+                todoRepository.updateTodoCategory(item.copy(isImportante = true))
+            } catch(e: Exception) {
+            
+            }
+        }
+        categoryList.clear()
+    }
+    
     companion object {
         const val TIMEOUT_MILLIS = 5_000L
     }      

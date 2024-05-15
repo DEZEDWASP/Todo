@@ -20,6 +20,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.andmar.todo.ui.theme.MyComposeApplicationTheme
 import java.time.LocalDateTime
 
@@ -34,7 +35,9 @@ class MainActivity : ComponentActivity() {
             MyComposeApplicationTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background) {
+                    color = MaterialTheme.colorScheme.background
+                  //  tonalElevation = 5.dp
+                ) {
                     TodoApp()
                    ActivityCompat.requestPermissions(
                     this,

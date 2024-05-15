@@ -472,6 +472,7 @@ val checked = remember {
 }
 
 if(checked.value) todoItemsList.add(item)
+if(!checked.value) todoItemsList.removeIf { it == item }
 
     Card(
         modifier = modifier
@@ -486,14 +487,6 @@ if(checked.value) todoItemsList.add(item)
             Column {
                 Text(
                     text = item.todoTitle,
-                    modifier = Modifier
-                        .fillMaxWidth(0.5f)
-                        .padding(5.dp),
-                    maxLines = 1,
-                    textDecoration = if(item.isDone) TextDecoration.LineThrough else TextDecoration.None
-                )
-                Text(
-                    text = item.todoInfo,
                     modifier = Modifier
                         .fillMaxWidth(0.5f)
                         .padding(5.dp),

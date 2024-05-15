@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import androidx.compose.ui.graphics.Color
 import com.andmar.todo.data.dataStore.PreferencesRepository
 
 class TodoSettingsViewModel(
@@ -21,11 +22,15 @@ class TodoSettingsViewModel(
                 initialValue = SettingsAppState()
             )
     
+    
+        
+        
+    
     fun saveSettings(settingsApp: SettingsAppState) = viewModelScope.launch {
         dataStore.saveSettingsApp(settingsApp)
     }
 }
 
 data class SettingsAppState(
-    val colorText: String = "Blue"
+    val colorName: String = "Transparent"
 )

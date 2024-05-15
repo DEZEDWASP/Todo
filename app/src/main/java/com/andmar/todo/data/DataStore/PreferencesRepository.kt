@@ -1,5 +1,7 @@
 package com.andmar.todo.data.dataStore
 
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
@@ -24,13 +26,13 @@ class PreferencesRepository(
     val getUiColor = dataStore.data
         .map { preferences -> 
             return@map SettingsAppState(
-                colorText = preferences[UI_COLOR] ?: "Black"
+                colorName = preferences[UI_COLOR] ?: "Transparent"
             )
         }
     
     suspend fun saveSettingsApp(settingsAppState: SettingsAppState) {
         dataStore.edit { preferences ->
-            preferences[UI_COLOR] = settingsAppState.colorText
+            preferences[UI_COLOR] = settingsAppState.colorName
         }
     }
 }
